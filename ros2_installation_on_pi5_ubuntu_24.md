@@ -28,11 +28,11 @@
 
 ### Install ROS2 on Ubuntu 24.04
 
-Ubuntu 24.04 is compatible with ROS2 **Humbl**e Hawksbill, so you should install that version. Here are the steps to install ROS2 Humble:
+Ubuntu 24.04 is compatible with ROS2 **Humbl**e Hawksbill, so you should install that version. Here are the steps to install ROS2 Jazzy:
 
-- **Official Documentation**: [ROS2 Humble Installation Guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
+- **Official Documentation**: [ROS2 Jazzy Installation Guide](https://docs.ros.org/en/Jazzy/Installation/Ubuntu-Install-Debians.html)
 
-#### Steps to install ROS2 Humble:
+#### Steps to install ROS2 Jazzy:
 
 **Set up the ROS2 GPG key**:  
    Add the ROS2 repository's GPG key to your system with the following command:
@@ -48,8 +48,8 @@ Ubuntu 24.04 is compatible with ROS2 **Humbl**e Hawksbill, so you should install
    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
    ```
 
-**Install ROS2 Humble desktop version**:  
-   Install the ROS2 Humble desktop version (including the ROS2 core libraries and additional tools):
+**Install ROS2 Jazzy desktop version**:  
+   Install the ROS2 Jazzy desktop version (including the ROS2 core libraries and additional tools):
 
    ```bash
    sudo apt install ros-dev-tools
@@ -64,7 +64,7 @@ Ubuntu 24.04 is compatible with ROS2 **Humbl**e Hawksbill, so you should install
    After installing ROS2, source the environment setup script to make the ROS2 tools available:
 
    ```bash
-   source /opt/ros/humble/setup.bash
+   source /opt/ros/Jazzy/setup.bash
    ```
 
 **Run a demo node**:  

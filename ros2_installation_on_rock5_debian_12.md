@@ -1,4 +1,4 @@
-### Guide to Install Debian 12 on Rock5 Using Etcher (Linux Only)
+### Guide to Install Debian 12 on Rock5 Using Etcher
 
 This guide will walk you through the process of installing Debian 12 on your Rock5 device by writing the Debian image to an SD card using Etcher, then booting the system on your Rock5.
 

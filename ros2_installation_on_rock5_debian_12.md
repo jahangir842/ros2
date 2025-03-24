@@ -14,15 +14,35 @@ This guide will walk you through the process of installing Debian 12 on your Roc
 ##### Step 1: Download the Debian Image
 Ensure you have the correct Debian 12 image for your Rock5 device. You can download it from the official source. The file should be named something like `rock-5b_bookworm_kde_b5.output.img`.
 
-#### Radxa Official Images:
+#### Debian Image from Radxa Official Website:
 - https://docs.radxa.com/en/rock5/rock5b/download
 - https://docs.radxa.com/en/rock5/rock5b
 
-**Note:** open site, change language to english and browse to required product e.g: Rock5-b
+**Note:** download image : rock-5b_bookworm_kde_b5 (rock-5b_bookworm_kde_b5.output.img.xz)
+
+
+### Extract the Image
+Before flashing, extract the `.xz` file to get the raw `.img` file.
+
+#### **On Linux/macOS**
+```sh
+xz -d rock-5b_bookworm_kde_b5.output.img.xz
+```
+or using `unxz`:
+```sh
+unxz rock-5b_bookworm_kde_b5.output.img.xz
+```
+
+#### **On Windows**
+Use **7-Zip** or **WinRAR** to extract the `.img` file.
+
+---
 
 #### Debian arm64 images:
 - Image: [https://www.debian.org/distrib/netinst](https://cdimage.debian.org/debian-cd/current/arm64/iso-cd/debian-12.10.0-arm64-netinst.iso)
 - Download Page: https://www.debian.org/distrib/netinst
+
+---
 
 ##### Step 2: Install Etcher on Linux
 Etcher is a simple tool that you can use to burn operating system images to SD cards or USB drives. Follow these steps to install Etcher on your Linux machine:
@@ -32,6 +52,8 @@ Etcher is a simple tool that you can use to burn operating system images to SD c
    - Go to [Etcher's official website](https://www.balena.io/etcher/).
    - Download the etcher for Linux.
    - Once downloaded, extract it, open it and run `balena-etcher`
+
+---
 
 ##### Step 3: Insert the SD Card
 Insert your SD card (16GB or larger) into your computer using an SD card reader. Make sure to back up any data on the SD card, as it will be erased during the writing process. https://github.com/jahangir842/linux-notes/blob/main/file-system/wipefs.md

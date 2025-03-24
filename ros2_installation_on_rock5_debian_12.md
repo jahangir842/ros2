@@ -18,7 +18,7 @@ Ensure you have the correct Debian 12 image for your Rock5 device. You can downl
 - https://docs.radxa.com/en/rock5/rock5b/download
 - https://docs.radxa.com/en/rock5/rock5b
 
-**Note:** download image : rock-5b_bookworm_kde_b5 (rock-5b_bookworm_kde_b5.output.img.xz)
+**Note:** download image : rock-5b_bookworm_kde_b5 (`rock-5b_bookworm_kde_b5.output.img.xz`)
 
 
 ### Extract the Image

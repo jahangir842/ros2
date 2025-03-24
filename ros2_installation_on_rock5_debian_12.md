@@ -63,6 +63,10 @@ Take the SD card that you just flashed and insert it into your Rock5 device.
 
 Congratulations! You've successfully installed Debian 12 on your Rock5 device using Etcher.
 
+#### Initial Credentials:
+- Username: radxa
+- Password: radxa 
+
 ##### Additional Tips:
 - If the Rock5 doesn’t boot, ensure the SD card is securely inserted, and try a different SD card if necessary.
 - You can refer to the official Debian and Rock5 documentation for advanced configurations and troubleshooting. 

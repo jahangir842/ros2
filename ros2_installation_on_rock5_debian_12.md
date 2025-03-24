@@ -15,8 +15,8 @@ This guide will walk you through the process of installing Debian 12 on your Roc
 Ensure you have the correct Debian 12 image for your Rock5 device. You can download it from the official source. The file should be named something like `rock-5b_bookworm_kde_b5.output.img`.
 
 #### Radxa Official Images:
-
-https://docs.radxa.com/en/rock5/rock5b
+- https://docs.radxa.com/en/rock5/rock5b/download
+- https://docs.radxa.com/en/rock5/rock5b
 
 **Note:** open site, change language to english and browse to required product e.g: Rock5-b
 

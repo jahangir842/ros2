@@ -14,7 +14,7 @@ This guide will walk you through the process of installing Debian 12 on your Roc
 ##### Step 1: Download the Debian Image
 Ensure you have the correct Debian 12 image for your Rock5 device. You can download it from the official source. The file should be named something like `rock-5b_bookworm_kde_b5.output.img`.
 
-### # Test this images:
+#### Debian arm64 images:
 - Image: [https://www.debian.org/distrib/netinst](https://cdimage.debian.org/debian-cd/current/arm64/iso-cd/debian-12.10.0-arm64-netinst.iso)
 - Download Page: https://www.debian.org/distrib/netinst
 

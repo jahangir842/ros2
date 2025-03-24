@@ -31,7 +31,7 @@ Etcher is a simple tool that you can use to burn operating system images to SD c
      ```
 
 ##### Step 3: Insert the SD Card
-Insert your SD card (16GB or larger) into your computer using an SD card reader. Make sure to back up any data on the SD card, as it will be erased during the writing process.
+Insert your SD card (16GB or larger) into your computer using an SD card reader. Make sure to back up any data on the SD card, as it will be erased during the writing process. https://github.com/jahangir842/linux-notes/blob/main/file-system/wipefs.md
 
 ##### Step 4: Open Etcher and Select the Image
 1. Launch Etcher from your application menu or by running the `.AppImage` if you used that method.

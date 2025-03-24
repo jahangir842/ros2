@@ -17,14 +17,8 @@ Ensure you have the correct Debian 12 image for your Rock5 device. You can downl
 ##### Step 2: Install Etcher on Linux
 Etcher is a simple tool that you can use to burn operating system images to SD cards or USB drives. Follow these steps to install Etcher on your Linux machine:
 
-1. **Using Snap Package (Recommended)**:
-   If your system supports Snap, you can install Etcher by running the following command:
-   ```bash
-   sudo snap install etcher
-   ```
-
-2. **Using the .AppImage**:
-   Alternatively, you can download the Etcher `.AppImage` from the official site:
+**Using the .AppImage**:
+   You can download the Etcher `.AppImage` from the official site:
    - Go to [Etcher's official website](https://www.balena.io/etcher/).
    - Download the `.AppImage` file for Linux.
    - Once downloaded, give it execute permission:

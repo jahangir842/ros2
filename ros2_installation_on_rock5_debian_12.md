@@ -38,7 +38,7 @@ Use **7-Zip** or **WinRAR** to extract the `.img` file.
 
 ---
 
-#### Debian arm64 images:
+#### Debian arm64 images (Not tested yet):
 - Image: [https://www.debian.org/distrib/netinst](https://cdimage.debian.org/debian-cd/current/arm64/iso-cd/debian-12.10.0-arm64-netinst.iso)
 - Download Page: https://www.debian.org/distrib/netinst
 

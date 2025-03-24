@@ -27,18 +27,11 @@ Ensure you have the correct Debian 12 image for your Rock5 device. You can downl
 ##### Step 2: Install Etcher on Linux
 Etcher is a simple tool that you can use to burn operating system images to SD cards or USB drives. Follow these steps to install Etcher on your Linux machine:
 
-**Using the .AppImage**:
-   You can download the Etcher `.AppImage` from the official site:
+**Download Etcher**:
+   You can download the Etcher from the official site:
    - Go to [Etcher's official website](https://www.balena.io/etcher/).
-   - Download the `.AppImage` file for Linux.
-   - Once downloaded, give it execute permission:
-     ```bash
-     chmod +x balena-etcher-electron-*.AppImage
-     ```
-   - Run it with:
-     ```bash
-     ./balena-etcher-electron-*.AppImage
-     ```
+   - Download the etcher for Linux.
+   - Once downloaded, extract it, open it and run `balena-etcher`
 
 ##### Step 3: Insert the SD Card
 Insert your SD card (16GB or larger) into your computer using an SD card reader. Make sure to back up any data on the SD card, as it will be erased during the writing process. https://github.com/jahangir842/linux-notes/blob/main/file-system/wipefs.md

@@ -1,27 +1,32 @@
-### Install Ubuntu 24.04 on Raspberry Pi 5
+### Installing Ubuntu 24.04 on Raspberry Pi 5  
 
-1. **Download Raspberry Pi Imager**:  
-   First, download the [Raspberry Pi Imager](https://www.raspberrypi.org/software/) for your operating system (Windows, macOS, or Linux).
+1. **Get the Raspberry Pi Imager**:  
+   - Download the [Raspberry Pi Imager](https://www.raspberrypi.org/software/) for your OS (Windows, macOS, or Linux).
+     
+2. Alternatively, install it on Linux using:  
+     ```bash
+     sudo apt install rpi-imager
+     ```
 
-2. **Insert a microSD card**:  
+3. **Insert a microSD card**:  
    Insert your microSD card (at least 16GB recommended) into your computer using a card reader.
 
-3. **Open Raspberry Pi Imager**:  
+4. **Open Raspberry Pi Imager**:  
    Launch the Raspberry Pi Imager after installation.
 
-4. **Choose Ubuntu 24.04 LTS**:  
+5. **Choose Ubuntu 24.04 LTS**:  
    In the Raspberry Pi Imager, click on **CHOOSE OS** and select **General Purpose OS** and select **Ubuntu**. Then, choose **Ubuntu 24.04 LTS (Server)** for your architecture (usually ARM for Raspberry Pi 5).
 
-5. **Select the microSD card**:  
+6. **Select the microSD card**:  
    Click on **CHOOSE STORAGE** and select your microSD card.
 
-6. **Write the image**:  
+7. **Write the image**:  
    After selecting the microSD card, click **WRITE** to begin writing the Ubuntu 24.04 LTS image to the card. This will take a few minutes.
 
-7. **Eject and Insert the microSD card**:  
+8. **Eject and Insert the microSD card**:  
    Once the writing process is complete, safely eject the microSD card from your computer and insert it into the Raspberry Pi 5.
 
-8. **Power on Raspberry Pi**:  
+9. **Power on Raspberry Pi**:  
    Connect your Raspberry Pi to a monitor, keyboard, and mouse, and then power it on. Follow the on-screen instructions to complete the initial setup, including setting up your language, region, and network.
 
 ---

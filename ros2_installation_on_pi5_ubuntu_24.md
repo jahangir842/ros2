@@ -10,7 +10,7 @@
    Launch the Raspberry Pi Imager after installation.
 
 4. **Choose Ubuntu 24.04 LTS**:  
-   In the Raspberry Pi Imager, click on **CHOOSE OS** and select **Ubuntu**. Then, choose **Ubuntu 24.04 LTS (Server)** for your architecture (usually ARM for Raspberry Pi 5).
+   In the Raspberry Pi Imager, click on **CHOOSE OS** and select **General Purpose OS** and select **Ubuntu**. Then, choose **Ubuntu 24.04 LTS (Server)** for your architecture (usually ARM for Raspberry Pi 5).
 
 5. **Select the microSD card**:  
    Click on **CHOOSE STORAGE** and select your microSD card.

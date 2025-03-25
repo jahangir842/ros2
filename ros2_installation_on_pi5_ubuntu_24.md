@@ -30,7 +30,7 @@
 
 Ubuntu 24.04 is compatible with ROS2 **Humbl**e Hawksbill, so you should install that version. Here are the steps to install ROS2 Jazzy:
 
-- **Official Documentation**: [ROS2 Jazzy Installation Guide](https://docs.ros.org/en/Jazzy/Installation/Ubuntu-Install-Debians.html)
+- **Official Documentation**: https://docs.ros.org/en/jazzy/index.html
 
 #### Steps to install ROS2 Jazzy:
 

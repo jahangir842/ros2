@@ -96,7 +96,7 @@ Congratulations! You've successfully installed Debian 12 on your Rock5 device us
 ---
 
 ### Install ROS2 HUMBLE on Debian 12 BookWorm
-- **Official Link:** https://docs.radxa.com/en/rock5/rock5t/app-development/ros2_humble
+- **Official Link:** [https://docs.radxa.com/en/rock5/rock5t/app-development/ros2_humble](https://docs.radxa.com/en/rock5/rock5b/app-development/ros2_humble)
 
 #### System Requirements:
 - **OS**: Debian 12 Bookworm

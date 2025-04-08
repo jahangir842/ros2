@@ -35,35 +35,7 @@
 
 Ubuntu 24.04 is compatible with ROS2 **Humbl**e Hawksbill, so you should install that version. Here are the steps to install ROS2 Jazzy:
 
-- **Official Documentation**: https://docs.ros.org/en/jazzy/index.html
-
-#### Steps to install ROS2 Jazzy:
-
-**Set up the ROS2 GPG key**:  
-   Add the ROS2 repository's GPG key to your system with the following command:
-
-   ```bash
-   sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-   ```
-
-**Add the ROS2 repository**:  
-   Next, add the ROS2 repository to your APT sources list. This will allow you to download ROS2 packages directly from the official repository.
-
-   ```bash
-   echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
-   ```
-
-**Install ROS2 Jazzy desktop version**:  
-   Install the ROS2 Jazzy desktop version (including the ROS2 core libraries and additional tools):
-
-   ```bash
-   sudo apt install ros-dev-tools
-   sudo apt update
-   sudo apt upgrade
-   sudo apt install ros-rolling-desktop
-   source /opt/ros/rolling/setup.bash
-   ros2 run demo_nodes_cpp talker
-   ```
+- **Official Documentation**: [https://docs.ros.org/en/jazzy/index.html](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html)
 
 **Source ROS2 environment**:  
    After installing ROS2, source the environment setup script to make the ROS2 tools available:
@@ -72,14 +44,30 @@ Ubuntu 24.04 is compatible with ROS2 **Humbl**e Hawksbill, so you should install
    source /opt/ros/Jazzy/setup.bash
    ```
 
-**Run a demo node**:  
-   You can verify your installation by running a demo node:
+---
+
+### **Run a Demo Node**:  
+You can verify your ROS 2 installation by running both a **talker** and **listener** node. The **talker** node sends messages, while the **listener** node receives them.
+
+1. **Start the talker node**:  
+   Open one terminal and run the following command to start the **talker** node, which will send messages on a ROS 2 topic.
 
    ```bash
    ros2 run demo_nodes_cpp talker
    ```
 
-This will start a basic "talker" node that sends out messages in a ROS2 communication channel.
+   This node will start sending messages in a ROS 2 communication channel.
+
+2. **Start the listener node**:  
+   Open another terminal and run the following command to start the **listener** node, which listens for the messages sent by the **talker**.
+
+   ```bash
+   ros2 run demo_nodes_cpp listener
+   ```
+
+   The listener will print the received messages to the terminal as they arrive.
 
 ---
+
+This will set up a basic communication system in ROS 2, where the **talker** node publishes messages, and the **listener** node subscribes to and prints those messages. This is a simple way to verify that your ROS 2 installation is working correctly.
 

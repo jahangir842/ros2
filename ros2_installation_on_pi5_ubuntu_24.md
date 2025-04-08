@@ -41,7 +41,7 @@ Ubuntu 24.04 is compatible with ROS2 **Humbl**e Hawksbill, so you should install
    After installing ROS2, source the environment setup script to make the ROS2 tools available:
 
    ```bash
-   source /opt/ros/Jazzy/setup.bash
+   source /opt/ros/jazzy/setup.bash
    ```
 
 ---

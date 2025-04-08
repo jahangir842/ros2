@@ -1,7 +1,7 @@
 ### Installing Ubuntu 24.04 on Raspberry Pi 5  
 
 1. **Get the Raspberry Pi Imager**:  
-   - Download the [Raspberry Pi Imager](https://www.raspberrypi.org/software/) for your OS (Windows, macOS, or Linux).
+   - Download the **Raspberry Pi Imager:** [https://www.raspberrypi.org/software/](https://www.raspberrypi.org/software/) for your OS (Windows, macOS, or Linux).
      
 2. Alternatively, install it on Linux using:  
      ```bash
@@ -35,7 +35,7 @@
 
 Ubuntu 24.04 is compatible with ROS2 **Humbl**e Hawksbill, so you should install that version. Here are the steps to install ROS2 Jazzy:
 
-- **Official Documentation**: [https://docs.ros.org/en/jazzy/index.html](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html)
+- **Official Documentation**: [https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html)
 
 **Source ROS2 environment**:  
    After installing ROS2, source the environment setup script to make the ROS2 tools available:

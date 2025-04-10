@@ -3,6 +3,10 @@
 ### ✅ Prerequisites
 Make sure the device (`/dev/sda`) is not mounted before starting the backup.
 
+```bash
+lsblk
+```
+
 ### ⚙️ PI-5 Backup
 
 ```bash

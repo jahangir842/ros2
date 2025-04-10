@@ -14,7 +14,7 @@ lsblk
 sudo umount /dev/sda*
 
 # Create a backup image of the entire drive
-sudo dd if=/dev/sda of=/media/jahangir/disk2/raspberry_pi_backup.img bs=4M status=progress
+sudo dd if=/dev/sda of=/image-path/raspberry_pi_backup.img bs=4M status=progress
 ```
 
 #### ✅ Sample Output:
@@ -34,7 +34,7 @@ sudo dd if=/dev/sda of=/media/jahangir/disk2/raspberry_pi_backup.img bs=4M statu
 sudo umount /dev/sda*
 
 # Create a backup image of the entire drive
-sudo dd if=/dev/sda of=/media/jahangir/disk2/rock-5_backup.img bs=4M status=progress
+sudo dd if=/dev/sda of=/image-path/rock-5_backup.img bs=4M status=progress
 ```
 
 #### ✅ Sample Output:
@@ -80,12 +80,12 @@ sudo umount /dev/sda*
 
 #### 📥 For Raspberry Pi:
 ```bash
-sudo dd if=/media/jahangir/disk2/raspberry_pi_backup.img of=/dev/sda bs=4M status=progress
+sudo dd if=/image-path/raspberry_pi_backup.img of=/dev/sda bs=4M status=progress
 ```
 
 #### 📥 For Rock-5:
 ```bash
-sudo dd if=/media/jahangir/disk2/rock-5_backup.img of=/dev/sda bs=4M status=progress
+sudo dd if=/image-path/rock-5_backup.img of=/dev/sda bs=4M status=progress
 ```
 
 ### Step 3: Flush Write Cache (Recommended)

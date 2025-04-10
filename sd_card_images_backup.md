@@ -45,8 +45,6 @@ sudo dd if=/dev/sda of=/media/jahangir/disk2/rock-5_backup.img bs=4M status=prog
 31914983424 bytes (32 GB, 30 GiB) copied, 5623.74 s, 5.7 MB/s
 ```
 
----
-
 ### 📝 Notes
 
 - **`/dev/sda`**: Ensure this is the correct source drive.
@@ -56,44 +54,54 @@ sudo dd if=/dev/sda of=/media/jahangir/disk2/rock-5_backup.img bs=4M status=prog
 
 ---
 
-Let me know if you want the restore steps too or how to compress the image after backup (e.g., using `gzip` or `xz`).
+## 🔁 Writing Backup Image to SD Card
 
+### ✅ Prerequisites
 
+- Ensure the target device (e.g., `/dev/sda`) is **correct and unmounted**.
+- Double-check the device path to avoid overwriting your main disk!
 
-
-
----
-
-before rewrite
-
----
-
-## PI-5
-```bash
-sudo umount /dev/sda*
-```
-
-```bash
-sudo dd if=/dev/sda of=/media/jahangir/disk2/raspberry_pi_backup.img bs=4M status=progress
-63862472704 bytes (64 GB, 59 GiB) copied, 11258 s, 5.7 MB/s
-15226+1 records in
-15226+1 records out
-63864569856 bytes (64 GB, 59 GiB) copied, 11258.5 s, 5.7 MB/s
-```
+### ⚠️ Warning  
+> Be **very careful** when using `dd`. Writing to the wrong device can erase your data!
 
 ---
 
+## 💾 Restore Raspberry Pi / Rock-5 Image
 
-## Rock-5:
+### Step 1: Unmount the SD Card
+
+Before writing the image, unmount all mounted partitions on the target device:
 
 ```bash
 sudo umount /dev/sda*
 ```
 
+### Step 2: Write the Image Back
+
+#### 📥 For Raspberry Pi:
 ```bash
-sudo dd if=/dev/sda of=/media/jahangir/disk2/rock-5_backup.img bs=4M status=progress
-31914459136 bytes (32 GB, 30 GiB) copied, 5623 s, 5.7 MB/s 
-7609+1 records in
-7609+1 records out
-31914983424 bytes (32 GB, 30 GiB) copied, 5623.74 s, 5.7 MB/s
+sudo dd if=/media/jahangir/disk2/raspberry_pi_backup.img of=/dev/sda bs=4M status=progress
 ```
+
+#### 📥 For Rock-5:
+```bash
+sudo dd if=/media/jahangir/disk2/rock-5_backup.img of=/dev/sda bs=4M status=progress
+```
+
+### Step 3: Flush Write Cache (Recommended)
+
+```bash
+sync
+```
+
+This ensures all write operations are completed before you remove the SD card.
+
+---
+
+## ✅ Post-Restore Tips
+
+- After writing, you can mount the SD card and inspect files to verify the restore.
+- If restoring to a **larger SD card**, consider using `gparted` to expand the root partition.
+- If restoring on **another system**, adjust device paths accordingly (e.g., `/dev/mmcblk0`, `/dev/sdb`, etc.).
+
+---
